@@ -233,6 +233,28 @@ to delete the topic and recreate it.
 
 </details>
 
+## Custom Project: Retail Omnichannel Order Monitoring
+
+This custom Kafka streaming project was inspired by retail omnichannel order operations and supply chain support workflows.
+
+The modified consumer monitors streaming retail sales orders and performs additional fulfillment analysis by:
+
+- Calculating order totals using quantity and unit price
+- Identifying higher quantity orders requiring fulfillment review
+- Adding fulfillment priority classifications
+- Simulating retail order monitoring similar to omnichannel retail operations
+
+The customized consumer creates additional output columns:
+
+- order_total
+- fulfillment_priority
+
+Example fulfillment logic:
+- Orders with quantity >= 3 are flagged as review-high-quantity-order
+- Standard orders are marked as standard-order
+
+This project demonstrates how Kafka streaming pipelines can support retail order visibility, fulfillment monitoring, and operational analytics in supply chain environments.
+
 ## Notes
 
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
